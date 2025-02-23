@@ -1,0 +1,65 @@
+<!-- // This My weather project that find weather data from a weather API based on the user's location
+// Vivek Prajapati -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+            <div class="search-box">
+                <input type="text" id="locationInput" placeholder="Enter city name...">
+                <button id="searchBtn">Search</button>
+                <button id="currentLocationBtn">Use My Location</button>
+            </div>
+        </header>
+
+        <div class="weather-container">
+            <div class="weather-card">
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="" alt="Weather Icon">
+                </div>
+                <div class="weather-info">
+                    <h2 id="cityName">City Name</h2>
+                    <p id="weatherDescription">Weather Description</p>
+                    <div class="temperature">
+                        <span id="temperature">0</span>
+                        <span class="unit">°C</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card humidity">
+                    <span class="label">Humidity</span>
+                    <span id="humidity">0%</span>
+                </div>
+                <div class="detail-card wind">
+                    <span class="label">Wind Speed</span>
+                    <span id="windSpeed">0 km/h</span>
+                </div>
+                <div class="detail-card pressure">
+                    <span class="label">Pressure</span>
+                    <span id="pressure">0 hPa</span>
+                </div>
+                <div class="detail-card feels-like">
+                    <span class="label">Feels Like</span>
+                    <span id="feelsLike">0°C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loading-overlay" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
